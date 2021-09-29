@@ -1,10 +1,12 @@
 #pragma once
 #include "Activity.h"
-class FirstActivity : public Activity
+class ThirdActivity :
+    public Activity
 {
 public:
     void run();
     char* getActivityName() {
-        return (char*)"Impares entre dois numeros";
+        return (char*)"Numero é do Fibonacci?";
     };
 };
+

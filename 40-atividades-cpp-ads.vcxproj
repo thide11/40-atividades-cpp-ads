@@ -143,11 +143,13 @@
     <ClCompile Include="Activity.cpp" />
     <ClCompile Include="firstActivity.cpp" />
     <ClCompile Include="secondActivity.cpp" />
+    <ClCompile Include="thirdActivity.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Activity.h" />
     <ClInclude Include="firstActivity.h" />
     <ClInclude Include="secondActivity.h" />
+    <ClInclude Include="thirdActivity.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -5,10 +5,18 @@ class SecondActivity :
 {
     public:
         void run();
-        char* activityName = (char*) "Reajuste de salário";
+        char* getActivityName() {
+            return (char*)"Reajuste de salário";
+        };
     private:
-        int sumOldSalary, sumDiference, sumNewSalary = 0;
+        int sumOldSalary = 0;
+        float sumDiference, sumNewSalary = 0;
         float calculateNewSalary(int oldSalary);
         void showSums();
 };
 
+class Employee {
+public:
+    int salary;
+    string name;
+};

@@ -5,13 +5,14 @@ using namespace std;
 
 void SecondActivity::run() {
 	while(true) {
-		char* name = strInput("Digite um nome");
+		string name = strInput("Digite um nome ou tecle FIM: ");
 		if (name == "FIM") {
 			break;
 		}
-		int salary = input("Digite seu salário");
+		int salary = input("Digite seu salário: ");
 		float newSalary = calculateNewSalary(salary);
 		float diference = newSalary - salary;
+		cout << name << " tinha um salário de R$ " << salary << ", com o reajuste, o salário ira ficar de R$ " << newSalary << endl;
 		sumOldSalary += salary;
 		sumNewSalary += newSalary;
 		sumDiference += diference;
@@ -36,7 +37,7 @@ float SecondActivity::calculateNewSalary(int oldSalary) {
 }
 
 void SecondActivity::showSums() {
-	cout << "A soma dos salários antigos e:" << sumOldSalary << endl;
-	cout << "A soma dos novos sálarios e:" << sumNewSalary << endl;
-	cout << "O reajuste é de :" << sumDiference << endl;
+	cout << "A soma dos salários antigos é de R$ " << sumOldSalary << endl;
+	cout << "A soma dos novos sálarios é de R$ " << sumNewSalary << endl;
+	cout << "O reajuste foi de R$ " << sumDiference << endl;
 }
