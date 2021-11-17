@@ -9,10 +9,10 @@ void SecondActivity::run() {
 		if (name == "FIM") {
 			break;
 		}
-		int salary = input("Digite seu salário: ");
+		int salary = input("Digite seu salario: ");
 		float newSalary = calculateNewSalary(salary);
 		float diference = newSalary - salary;
-		cout << name << " tinha um salário de R$ " << salary << ", com o reajuste, o salário ira ficar de R$ " << newSalary << endl;
+		cout << name << " tinha um salario de R$ " << salary << ", com o reajuste, o salario ira ficar de R$ " << newSalary << endl;
 		sumOldSalary += salary;
 		sumNewSalary += newSalary;
 		sumDiference += diference;
@@ -37,7 +37,7 @@ float SecondActivity::calculateNewSalary(int oldSalary) {
 }
 
 void SecondActivity::showSums() {
-	cout << "A soma dos salários antigos é de R$ " << sumOldSalary << endl;
-	cout << "A soma dos novos sálarios é de R$ " << sumNewSalary << endl;
+	cout << "A soma dos salï¿½rios antigos ï¿½ de R$ " << sumOldSalary << endl;
+	cout << "A soma dos novos sï¿½larios ï¿½ de R$ " << sumNewSalary << endl;
 	cout << "O reajuste foi de R$ " << sumDiference << endl;
 }

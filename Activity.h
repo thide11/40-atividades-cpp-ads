@@ -11,6 +11,6 @@ protected:
 	int input(const char* answer);
 	string strInput(const char* answer);
 public:
-	virtual char* getActivityName() { return (char*)""; };
+	virtual const char* getActivityName() { return (char*)""; };
 	virtual void run() {};
 };

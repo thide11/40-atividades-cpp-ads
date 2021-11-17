@@ -13,7 +13,7 @@ void ThirdActivity::run() {
 			break;
 		}
 		if (second > num) {
-			print("Este numero não partence a sequencia de Fibonacci");
+			print("Este numero nao partence a sequencia de Fibonacci");
 			break;
 		}
 	}

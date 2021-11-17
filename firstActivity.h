@@ -4,7 +4,7 @@ class FirstActivity : public Activity
 {
 public:
     void run();
-    char* getActivityName() {
+    const char* getActivityName() {
         return (char*)"Impares entre dois numeros";
     };
 };
