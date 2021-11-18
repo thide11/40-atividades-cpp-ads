@@ -16,26 +16,26 @@ void TenActivity::run() {
   cout << "Aluno3 tirou a media " << aluno3->getMedia() << endl;
 }
 
-Aluno::Aluno(char* nome, char* ra, float nota1, float nota2) {
+Aluno::Aluno(string nome, string ra, float nota1, float nota2) {
   this->nome = nome;
   this->ra = ra;
   this->nota1 = nota1;
   this->nota2 = nota2;
 }
 
-char* Aluno::getNome() {
+string Aluno::getNome() {
   return this->nome;
 }
 
-void Aluno::setNome(char* nome) {
+void Aluno::setNome(string nome) {
   this->nome = nome;
 }
 
-char* Aluno::getRa() {
+string Aluno::getRa() {
   return this->ra;
 }
 
-void Aluno::setRa(char* ra) {
+void Aluno::setRa(string ra) {
   this->ra = ra;
 }
 

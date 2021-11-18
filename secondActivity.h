@@ -5,8 +5,8 @@ class SecondActivity :
 {
     public:
         void run();
-        const char* getActivityName() {
-            return (char*)"Reajuste de salario";
+        string getActivityName() {
+            return (string)"Reajuste de salario";
         };
     private:
         int sumOldSalary = 0;

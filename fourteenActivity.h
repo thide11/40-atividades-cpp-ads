@@ -9,8 +9,8 @@ class FourteenActivity : public Activity
 {
 public:
     void run();
-    const char* getActivityName() {
-        return (char*)"Funcionario e gerente";
+    string getActivityName() {
+        return (string)"Funcionario e gerente";
     };
 };
 
@@ -46,10 +46,10 @@ class AssistenteTecnico : public Assistente {
 
 class AssistenteAdministrativo : public Assistente {
     public:
-        char* getTurno() {
+        string getTurno() {
             return turno;
         }
-        setTurno(char* turno) {
+        void setTurno(string turno) {
             this->turno = turno;
         }
         getSalario() {
@@ -60,5 +60,5 @@ class AssistenteAdministrativo : public Assistente {
             return salario;
         }
     private:
-        char* turno;
+        string turno;
 };

@@ -19,7 +19,6 @@
 #include <iostream>
 #include <io.h>
 #include <fcntl.h>
-#include <cstring>
 
 
 using namespace std;
@@ -53,10 +52,11 @@ int main()
         cout << "Selecione o numero da atividade que deseja rodar:" << endl;
         int selection = 0;
         for (int i = 0; i < lenght; i++) {
-            cout << i << ": " << activities[i]->getActivityName() << std::endl;
+            cout << (i+1) << ": " << activities[i]->getActivityName() << std::endl;
         }
-        cout << lenght << ": " << "Sair do programa" << std::endl;
+        cout << (lenght+1) << ": Sair do programa" << std::endl;
         cin >> selection;
+        selection--;
         if(selection == lenght) {
             break;
         }

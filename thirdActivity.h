@@ -5,8 +5,8 @@ class ThirdActivity :
 {
 public:
     void run();
-    const char* getActivityName() {
-        return (char*)"Numero e do Fibonacci?";
+    string getActivityName() {
+        return (string)"Numero e do Fibonacci?";
     };
 };
 

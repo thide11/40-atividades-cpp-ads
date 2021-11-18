@@ -6,18 +6,18 @@ class SevenActivity :
 {
     public:
       void run();
-      const char* getActivityName() {
-          return (char*)"Exibicao Funcionario";
+      string getActivityName() {
+          return (string)"Exibicao Funcionario";
       };
 };
 
 class Funcionario {
     public:
         Funcionario();
-        Funcionario(char* codigo, char* nome, float salario);
+        Funcionario(string codigo, string nome, float salario);
         void mostrarDados();
     private:
-        char* codigo;
-        char* nome;
+        string codigo;
+        string nome;
         float salario;
 };

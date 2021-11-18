@@ -8,7 +8,7 @@ void SevenActivity::run() {
   funcionario->mostrarDados();
 }
 
-Funcionario::Funcionario(char* codigo, char* nome, float salario) {
+Funcionario::Funcionario(string codigo, string nome, float salario) {
   this->codigo = codigo;
   this->nome = nome;
   this->salario = salario;

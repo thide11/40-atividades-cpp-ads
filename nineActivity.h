@@ -6,8 +6,8 @@ class NineActivity :
 {
     public:
         void run();
-        const char* getActivityName() {
-            return (char*)"Exibicao transferencia de contas";
+        string getActivityName() {
+            return (string)"Exibicao transferencia de contas";
         };
     private:
         int sumOldSalary = 0;
@@ -21,6 +21,6 @@ class ContaComTransferencia :
 {
   public:
       ContaComTransferencia();
-      ContaComTransferencia(char* anumero, char* atitular, int asaldo, int alimite);
+      ContaComTransferencia(string anumero, string atitular, int asaldo, int alimite);
       void importarConta(Conta* conta);
 };

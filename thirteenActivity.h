@@ -4,25 +4,25 @@ class ThirteenActivity : public Activity
 {
 public:
     void run();
-    const char* getActivityName() {
-        return (char*)"Exibicao salario";
+    string getActivityName() {
+        return (string)"Exibicao salario";
     };
 };
 
 class Funcionario2 {
     public:
-        Funcionario2(char* nome, float salario, char* cargo);
+        Funcionario2(string nome, float salario, string cargo);
         Funcionario2();
-        char* getNome();
-        void setNome(char* nome);
+        string getNome();
+        void setNome(string nome);
         void setSalario(float salario);
         float getSalario();
-        void setCargo(char* cargo);
-        char* getCargo();
+        void setCargo(string cargo);
+        string getCargo();
         float calcularSalarioComReajuste();
         void exibeDados();
     protected:
-        char* nome;
+        string nome;
         float salario;
-        char* cargo;
+        string cargo;
 };

@@ -4,17 +4,17 @@ class EightActivity : public Activity
 {
 public:
     void run();
-    const char* getActivityName() {
-        return (char*)"Exibicao produto";
+    string getActivityName() {
+        return (string)"Exibicao produto";
     };
 };
 
 class Produto {
   public:
-    Produto(int codigo, const char* descricao, double preco);
+    Produto(int codigo, string descricao, double preco);
     void mostrarDados();
   private:
     int codigo;
-    const char* descricao;
+    string descricao;
     double preco;
 };

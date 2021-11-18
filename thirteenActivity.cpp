@@ -17,7 +17,7 @@ void ThirteenActivity::run() {
   funcionario3->exibeDados();
 };
 
-Funcionario2::Funcionario2(char* nome, float salario, char* cargo) {
+Funcionario2::Funcionario2(string nome, float salario, string cargo) {
   this->nome = nome;
   this->salario = salario;
   this->cargo = cargo;
@@ -25,11 +25,11 @@ Funcionario2::Funcionario2(char* nome, float salario, char* cargo) {
 
 Funcionario2::Funcionario2() {};
 
-char* Funcionario2::getNome() {
+string Funcionario2::getNome() {
   return nome;
 }
 
-void Funcionario2::setNome(char* nome) {
+void Funcionario2::setNome(string nome) {
   this->nome = nome;
 }
 
@@ -41,11 +41,11 @@ void Funcionario2::setSalario(float salario) {
   this->salario = salario;
 }
 
-char* Funcionario2::getCargo() {
+string Funcionario2::getCargo() {
   return cargo;
 }
 
-void Funcionario2::setCargo(char* cargo) {
+void Funcionario2::setCargo(string cargo) {
   this->cargo = cargo;
 }
 

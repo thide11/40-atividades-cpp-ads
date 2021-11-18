@@ -9,14 +9,14 @@ void FourActivity::run() {
     cout << "Mes invalido" << endl;
     return;
   }
-  char* vectorValue = convertMonthIntToString(monthNumber);
-  char* switchValue = convertMonthIntToString(monthNumber);
+  string vectorValue = convertMonthIntToString(monthNumber);
+  string switchValue = convertMonthIntToString(monthNumber);
   cout << "Implementacao com vetor: Voce esta no mes " << vectorValue << endl;
   cout << "Implementacao com switch: Voce esta no mes " << switchValue << endl;
 }
 
-char* FourActivity::convertMonthIntToString(int monthNumber) {
-  char* months[] = {
+string FourActivity::convertMonthIntToString(int monthNumber) {
+  string months[] = {
     "Janeiro",
     "Fevereiro",
     "Marco",
@@ -34,7 +34,7 @@ char* FourActivity::convertMonthIntToString(int monthNumber) {
   return months[monthNumber];
 }
 
-char* FourActivity::switchConvertMonthIntToString(int monthNumber) {
+string FourActivity::switchConvertMonthIntToString(int monthNumber) {
   switch (monthNumber) {
     case 1:
       return "Janeiro";
@@ -60,5 +60,7 @@ char* FourActivity::switchConvertMonthIntToString(int monthNumber) {
       return "Novembro";
     case 12:
       return "Dezembro";
+    default:
+      return "Mes desconhecido";
   }
 }

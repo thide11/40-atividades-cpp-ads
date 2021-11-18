@@ -19,7 +19,7 @@ void TwelveActivity::run() {
 
 Pessoa::Pessoa() {};
 
-Pessoa::Pessoa(int idade, char* nome, char* nacionalidade) {
+Pessoa::Pessoa(int idade, string nome, string nacionalidade) {
   this->idade = idade;
   this->nome = nome;
   this->nacionalidade = nacionalidade;
@@ -33,19 +33,19 @@ void Pessoa::setIdade(int idade) {
   this->idade = idade;
 }
 
-char* Pessoa::getNome() {
+string Pessoa::getNome() {
   return this->nome;
 }
 
-void Pessoa::setNome(char* nome) {
+void Pessoa::setNome(string nome) {
   this->nome = nome;
 }
 
-char* Pessoa::getNacionalidade() {
+string Pessoa::getNacionalidade() {
   return this->nacionalidade;
 }
 
-void Pessoa::setNacionalidade(char* nacionalidade) {
+void Pessoa::setNacionalidade(string nacionalidade) {
   this->nacionalidade = nacionalidade;
 }
 
@@ -58,12 +58,12 @@ int Pessoa::horasVividas() {
 }
 
 void Pessoa::imprimirDadosCalculados() {
-  const char* maiorDeIdade;
+  string maiorDeIdade;
   if(eMaiorDeIdade()) {
-    maiorDeIdade = "e";
+    maiorDeIdade = "e ";
   } else {
-    maiorDeIdade = "nao e";
+    maiorDeIdade = "nao e ";
   }
-  cout << "O " << this->nome << " " << maiorDeIdade << " maior de idade" << endl;
+  cout << "O " << this->nome << " " << maiorDeIdade << "maior de idade" << endl;
   cout << "E tem pelo menos " << horasVividas() << " horas de vida" << endl;
 }

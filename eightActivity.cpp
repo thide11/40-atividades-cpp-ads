@@ -9,7 +9,7 @@ void EightActivity::run() {
   produto->mostrarDados();
 };
 
-Produto::Produto(int codigo, const char* descricao, double preco) {
+Produto::Produto(int codigo, string descricao, double preco) {
   this->codigo = codigo;
   this->descricao = descricao;
   this->preco = preco;

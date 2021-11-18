@@ -7,15 +7,15 @@ using namespace std;
 class SixteenActivity : public Activity {
 public:
     void run();
-    const char* getActivityName() {
-        return (char*)"Ingressos";
+    string getActivityName() {
+        return (string)"Ingressos";
     };
 };
 
 namespace sixteen {
     class Ingresso {
         public:
-            imprimeValor() {
+            void imprimeValor() {
                 cout << "Valor do ingresso: R$ " << valor << endl;
             }
         protected:
@@ -24,32 +24,32 @@ namespace sixteen {
 
     class IngressoVip : public Ingresso {
         public:
-            imprimeValor() {
+            void imprimeValor() {
                 cout << "Valor do ingresso VIP: R$ " << (valor * 1.1) << endl;
             }
     };
 
     class Normal : public Ingresso {
         public:
-            imprimirTipo() {
+            void imprimirTipo() {
                 cout << "Ingresso Normal" << endl;
             }
     };
 
     class CamaroteInferior : public IngressoVip {
         public:
-            char* getLocalizacao() {
+            string getLocalizacao() {
                 return localizacao;
             }
-            void setLocalizacao(char* localizacao) {
+            void setLocalizacao(string localizacao) {
                 this->localizacao = localizacao;
             }
         private:
-            char* localizacao;
+            string localizacao;
     };
     class CamaroteSuperior : public IngressoVip {
         public:
-            imprimeValor() {
+            void imprimeValor() {
                 cout << "Valor do ingresso VIP camarote superior: R$ " << (valor * 1.2) << endl;
             }
     };

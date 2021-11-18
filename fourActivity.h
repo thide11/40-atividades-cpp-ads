@@ -4,10 +4,10 @@ class FourActivity :
 {
     public:
         void run();
-        const char* getActivityName() {
-            return (char*)"Numero do mes para nome";
+        string getActivityName() {
+            return (string)"Numero do mes para nome";
         };
     private:
-        char* convertMonthIntToString(int monthNumber);
-        char* switchConvertMonthIntToString(int monthNumber);
+        string convertMonthIntToString(int monthNumber);
+        string switchConvertMonthIntToString(int monthNumber);
 };

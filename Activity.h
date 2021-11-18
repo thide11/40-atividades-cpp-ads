@@ -5,12 +5,12 @@ using namespace std;
 
 class Activity {
 private:
-	void printWithoutEndl(const char* content);
+	void printWithoutEndl(string content);
 protected: 
-	void print(const char* content);
-	int input(const char* answer);
-	string strInput(const char* answer);
+	void print(string content);
+	int input(string answer);
+	string strInput(string answer);
 public:
-	virtual const char* getActivityName() { return (char*)""; };
+	virtual string getActivityName() { return (string)""; };
 	virtual void run() {};
 };

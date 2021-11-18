@@ -4,8 +4,8 @@
 class {{pascalCase}}Activity : public Activity {
 public:
     void run();
-    const char* getActivityName() {
-        return (char*)"";
+    string getActivityName() {
+        return (string)"";
     };
 };
 

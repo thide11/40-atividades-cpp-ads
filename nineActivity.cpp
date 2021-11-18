@@ -20,7 +20,7 @@ void NineActivity::run() {
 
 ContaComTransferencia::ContaComTransferencia() {}
 
-ContaComTransferencia::ContaComTransferencia(char* anumero, char* atitular, int asaldo, int alimite) {
+ContaComTransferencia::ContaComTransferencia(string anumero, string atitular, int asaldo, int alimite) {
   this->numero = anumero;
   this->nome = atitular;
   this->saldo = asaldo;

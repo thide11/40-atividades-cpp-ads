@@ -4,8 +4,8 @@
 class SeventeenActivity : public Activity {
 public:
     void run();
-    const char* getActivityName() {
-        return (char*)"Imoveis";
+    string getActivityName() {
+        return (string)"Imoveis";
     };
 };
 
@@ -38,7 +38,7 @@ namespace seventeen {
             float getValorAdicional() {
                 return valorAdicional;
             }
-            float setValorAdicional(float valorAdicional) {
+            void setValorAdicional(float valorAdicional) {
                 this->valorAdicional = valorAdicional;
             }
         private:
@@ -53,7 +53,7 @@ namespace seventeen {
             float getDesconto() {
                 return desconto;
             }
-            float setDesconto(float desconto) {
+            void setDesconto(float desconto) {
                 this->desconto = desconto;
             }
         private:

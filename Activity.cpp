@@ -4,22 +4,22 @@
 
 using namespace std;
 
-void Activity::printWithoutEndl(const char* content) {
+void Activity::printWithoutEndl(string content) {
 	cout << content;
 }
 
-void Activity::print(const char * content) {
+void Activity::print(string content) {
 	cout << content << endl;
 }
 
-int Activity::input(const char* answer) {
+int Activity::input(string answer) {
 	printWithoutEndl(answer);
 	int content;
 	cin >> content;
 	return content;
 }
 
-string Activity::strInput(const char* answer) {
+string Activity::strInput(string answer) {
 	printWithoutEndl(answer);
 	std::string userInput;
 	cin >> userInput;

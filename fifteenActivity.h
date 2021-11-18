@@ -6,8 +6,8 @@ class FifteenActivity : public Activity
 {
 public:
     void run();
-    const char* getActivityName() {
-        return (char*)"Modelagem diagrama animais";
+    string getActivityName() {
+        return (string)"Modelagem diagrama animais";
     };
 };
 
@@ -15,20 +15,20 @@ namespace fifteen {
     class Animal {
         public:
             Animal() {};
-            Animal(char* nome) {
+            Animal(string nome) {
                 this->nome = nome;
             }
-            char* caminha() {
+            string caminha() {
                 return "Agora esta dormindo";
             }
         private:
-            char* nome;
-            char* raca;
+            string nome;
+            string raca;
     };
 
     class Cachorro : public Animal {
         public:
-            char* late() {
+            string late() {
                 return "au au au au";
             }
         private:
@@ -36,7 +36,7 @@ namespace fifteen {
 
     class Gato : public Animal {
         public:
-            char* mia() {
+            string mia() {
                 return "miauu";
             }
         private:
@@ -46,7 +46,7 @@ namespace fifteen {
         public:
             Pessoa() {}
         private:
-            char* nome;
+            string nome;
             int idade;
     };
 

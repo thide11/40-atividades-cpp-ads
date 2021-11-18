@@ -25,7 +25,7 @@ void SixActivity::run() {
 
 Conta::Conta() {}
 
-Conta::Conta(char* anumero, char* atitular, int asaldo, int alimite) {
+Conta::Conta(string anumero, string atitular, int asaldo, int alimite) {
   numero = anumero;
   nome = atitular;
   saldo = asaldo;

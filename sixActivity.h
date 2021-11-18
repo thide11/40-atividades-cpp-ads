@@ -6,15 +6,15 @@ class SixActivity :
 {
     public:
       void run();
-      const char* getActivityName() {
-          return (char*)"Exibicao conta bancaria";
+      string getActivityName() {
+          return (string)"Exibicao conta bancaria";
       };
 };
 
 class Conta {
     public:
         Conta();
-        Conta(char* anumero, char* atitular, int asaldo, int alimite);
+        Conta(string anumero, string atitular, int asaldo, int alimite);
         void depositar(int valor);
         void sacar(int valor);
         void extrato();
@@ -22,8 +22,8 @@ class Conta {
         void zerarSaldo();
         int getLimite();
     protected:
-        char* numero;
-        char* nome;
+        string numero;
+        string nome;
         int saldo;
         int limite;
 };

@@ -4,8 +4,8 @@ class ElevenActivity : public Activity
 {
 public:
     void run();
-    const char* getActivityName() {
-        return (char*)"Exibicao retangulo";
+    string getActivityName() {
+        return (string)"Exibicao retangulo";
     };
 };
 
