@@ -9,6 +9,13 @@
 #include "./eightActivity.h"
 #include "./nineActivity.h"
 #include "./tenActivity.h"
+#include "./elevenActivity.h"
+#include "./twelveActivity.h"
+#include "./thirteenActivity.h"
+#include "./fourteenActivity.h"
+#include "./fifteenActivity.h"
+#include "./sixteenActivity.h"
+#include "./seventeenActivity.h"
 #include <iostream>
 #include <io.h>
 #include <fcntl.h>
@@ -30,6 +37,15 @@ int main()
         new EightActivity(),
         new NineActivity(),
         new TenActivity(),
+        new ElevenActivity(),
+        new TwelveActivity(),
+        new ThirteenActivity(),
+        new FourteenActivity(),
+        //A partir do 15, começou a ser comum nome de classes ser repetida, por isto foi introduzido
+        //o uso de namespaces
+        new FifteenActivity(),
+        new SixteenActivity(),
+        new SeventeenActivity(),
         //Aqui ser� incrementado a classe de cada nova atividade
     };
     int lenght = sizeof(activities) / sizeof(activities[0]);

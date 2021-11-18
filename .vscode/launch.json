@@ -11,7 +11,7 @@
       "program": "${workspaceFolder}/output.exe",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${fileDirname}",
+      "cwd": "${workspaceFolder}",
       "environment": [],
       "console": "externalTerminal",
       "preLaunchTask": "C/C++: g++.exe arquivo de build ativo"
