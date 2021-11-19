@@ -12,6 +12,10 @@ public:
 namespace seventeen {
     class Imovel {
         public:
+            Imovel() {
+                endereco = "Nao especificado";
+                preco = 200;
+            }
             void setEndereco(string endereco) {
                 this->endereco = endereco;
             }
@@ -24,6 +28,7 @@ namespace seventeen {
             float getPreco() {
                 return preco;
             }
+            virtual float getPrecoTotal() { return preco; };
         private:
             string endereco;
         protected:

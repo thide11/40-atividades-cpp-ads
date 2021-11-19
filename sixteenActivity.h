@@ -15,7 +15,10 @@ public:
 namespace sixteen {
     class Ingresso {
         public:
-            void imprimeValor() {
+            Ingresso() {
+                valor = 100;
+            }
+            virtual void imprimeValor() {
                 cout << "Valor do ingresso: R$ " << valor << endl;
             }
         protected:
@@ -24,7 +27,7 @@ namespace sixteen {
 
     class IngressoVip : public Ingresso {
         public:
-            void imprimeValor() {
+            virtual void imprimeValor() {
                 cout << "Valor do ingresso VIP: R$ " << (valor * 1.1) << endl;
             }
     };
@@ -49,7 +52,7 @@ namespace sixteen {
     };
     class CamaroteSuperior : public IngressoVip {
         public:
-            void imprimeValor() {
+            virtual void imprimeValor() {
                 cout << "Valor do ingresso VIP camarote superior: R$ " << (valor * 1.2) << endl;
             }
     };

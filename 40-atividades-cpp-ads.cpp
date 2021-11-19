@@ -16,6 +16,9 @@
 #include "./fifteenActivity.h"
 #include "./sixteenActivity.h"
 #include "./seventeenActivity.h"
+#include "./eighteenActivity.h"
+#include "./nineteenActivity.h"
+#include "./twentyActivity.h"
 #include <iostream>
 #include <io.h>
 #include <fcntl.h>
@@ -45,6 +48,9 @@ int main()
         new FifteenActivity(),
         new SixteenActivity(),
         new SeventeenActivity(),
+        new EighteenActivity(),
+        new NineteenActivity(),
+        new TwentyActivity(),
         //Aqui ser� incrementado a classe de cada nova atividade
     };
     int lenght = sizeof(activities) / sizeof(activities[0]);
