@@ -15,6 +15,7 @@ public:
 namespace nineteen {
     class Animal {
         public:
+            virtual void correr() = 0;
             virtual void emitirSom() = 0;
             string nome;
             int idade;
@@ -24,7 +25,7 @@ namespace nineteen {
             virtual void emitirSom() {
                 cout << "Au au" << endl;
             }
-            void correr() {
+            virtual void correr() {
                 cout << "Cachorro correndo..." << endl;
             }
     };
@@ -33,7 +34,7 @@ namespace nineteen {
             virtual void emitirSom() {
                 cout << "ihihihihi" << endl;
             }
-            void correr() {
+            virtual void correr() {
                 cout << "Cavalo correndo..." << endl;
             }
     };
@@ -42,6 +43,7 @@ namespace nineteen {
             virtual void emitirSom() {
                 cout << "roncc..." << endl;
             }
+            virtual void correr() {}
             void subirEmArvores() {
                 cout << "Bixo preguica esta subindo em uma arvore..." << endl;
             }
