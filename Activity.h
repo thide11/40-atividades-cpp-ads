@@ -11,6 +11,6 @@ protected:
 	int input(string answer);
 	string strInput(string answer);
 public:
-	virtual string getActivityName() { return (string)""; };
-	virtual void run() {};
+	virtual string getActivityName() = 0;
+	virtual void run() = 0;
 };

@@ -24,6 +24,14 @@
 #include "./twentyThreeActivity.h"
 #include "./twentyFourActivity.h"
 #include "./twentyFiveActivity.h"
+#include "./twentySixActivity.h"
+#include "./twentySevenActivity.h"
+#include "./twentyEightActivity.h"
+#include "./twentyNineActivity.h"
+#include "./thirtyActivity.h"
+#include "./thirtyOneActivity.h"
+#include "./thirtyTwoActivity.h"
+#include "./thirtyThreeActivity.h"
 #include <iostream>
 #include <io.h>
 #include <fcntl.h>
@@ -61,6 +69,15 @@ int main()
         new TwentyThreeActivity(),
         new TwentyFourActivity(),
         new TwentyFiveActivity(),
+        new TwentySixActivity(),
+        new TwentySevenActivity(),
+        new TwentyEightActivity(),
+        new TwentyNineActivity(),
+        new ThirtyActivity(),
+        new ThirtyOneActivity(),
+        new ThirtyTwoActivity(),
+        new ThirtyThreeActivity(),
+        // new ThirtyFourActivity(),
         //Aqui ser� incrementado a classe de cada nova atividade
     };
     int lenght = sizeof(activities) / sizeof(activities[0]);
