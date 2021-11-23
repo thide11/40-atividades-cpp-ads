@@ -12,7 +12,7 @@ class EighteenActivity : public Activity {
 public:
     void run();
     string getActivityName() {
-        return (string)"Teste";
+        return (string)"Teste das classes ultimas atividades";
     };
 };
 

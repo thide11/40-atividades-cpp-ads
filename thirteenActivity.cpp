@@ -9,7 +9,7 @@ void ThirteenActivity::run() {
   Funcionario2* funcionario = new Funcionario2("Jefferson", 3000, "Programador");
   funcionario->exibeDados();
   print("Funcionario 2:");
-  Funcionario2* funcionario2 = new Funcionario2("Carol", 700, "Estágiario");
+  Funcionario2* funcionario2 = new Funcionario2("Carol", 700, "Estagiario");
   funcionario2->exibeDados();
   print("Funcionario 3:");
   Funcionario2* funcionario3 = new Funcionario2("Jackson", 2000, "Suporte");
